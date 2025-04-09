@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" placeholder="Matn yozing..." id="mainInput" class="main-input">
+
+        <button id="speakBtn">O'qib berish</button>
+
+        <div class="slider-group">
+            <label for="volumeSlider">Volume</label>
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5">
+            <span id="volumeValue">50%</span>
+        </div>
+
+        <div class="slider-group">
+            <label for="rateSlider">Rate (Tezlik)</label>
+            <input type="range" id="rateSlider" min="0.1" max="2" step="0.1" value="1">
+            <span id="rateValue">1x</span>
+        </div>
+
+        <div class="slider-group">
+            <label for="pitchSlider">Pitch (Ohang)</label>
+            <input type="range" id="pitchSlider" min="0" max="2" step="0.1" value="1">
+            <span id="pitchValue">1x</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
